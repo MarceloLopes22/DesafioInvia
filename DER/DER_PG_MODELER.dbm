@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.7.0">
+<database name="Desafio_Invia">
+</database>
+
+<schema name="public" protected="true" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<table name="usuario">
+	<schema name="public"/>
+	<position x="596" y="255"/>
+	<column name="cpf" not-null="true">
+		<type name="varchar"/>
+	</column>
+	<column name="nome">
+		<type name="varchar"/>
+	</column>
+	<column name="email">
+		<type name="varchar"/>
+	</column>
+	<column name="senha">
+		<type name="varchar"/>
+	</column>
+	<constraint name="usuario_pk" type="pk-constr" factor="10" table="public.usuario">
+		<columns names="cpf" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="cargo">
+	<schema name="public"/>
+	<position x="595" y="46"/>
+	<column name="id">
+		<type name="bigint"/>
+	</column>
+	<column name="descricao">
+		<type name="varchar"/>
+	</column>
+	<constraint name="cargo_pk" type="pk-constr" factor="10" table="public.cargo">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="orgao">
+	<schema name="public"/>
+	<position x="981" y="287"/>
+	<column name="id">
+		<type name="bigint"/>
+	</column>
+	<column name="nome">
+		<type name="varchar"/>
+	</column>
+	<constraint name="orgao_pk" type="pk-constr" factor="10" table="public.orgao">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="sistema">
+	<schema name="public"/>
+	<position x="210" y="488"/>
+	<column name="id">
+		<type name="bigint"/>
+	</column>
+	<column name="nome">
+		<type name="varchar"/>
+	</column>
+	<constraint name="sistema_pk" type="pk-constr" factor="10" table="public.sistema">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="telefone">
+	<schema name="public"/>
+	<position x="600" y="500"/>
+	<column name="id">
+		<type name="bigint"/>
+	</column>
+	<column name="ddd">
+		<type name="integer"/>
+	</column>
+	<column name="numero">
+		<type name="varchar"/>
+	</column>
+	<column name="tipo">
+		<type name="varchar"/>
+	</column>
+	<constraint name="telefone_pk" type="pk-constr" factor="10" table="public.telefone">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<relationship name="usuario_has_many_telefone" type="rel1n"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 col-indexes="4" constr-indexes="1"
+	 src-table="public.usuario"
+	 dst-table="public.telefone"
+	 src-required="false" dst-required="false"/>
+
+<table name="usuario_sistema">
+	<schema name="public"/>
+	<position x="196" y="285"/>
+	<column name="cpf_usuario">
+		<type name="varchar"/>
+	</column>
+	<column name="id_sistema">
+		<type name="bigint"/>
+	</column>
+</table>
+
+<sequence name="cargo_seq"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="public"/>
+</sequence>
+
+<sequence name="orgao_seq"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="public"/>
+</sequence>
+
+<sequence name="telefone_seq"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="public"/>
+</sequence>
+
+<sequence name="sistema_seq"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="public"/>
+</sequence>
+
+<relationship name="cargo_has_many_usuario" type="rel1n"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 col-indexes="4" constr-indexes="1"
+	 src-table="public.cargo"
+	 dst-table="public.usuario"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="orgao_has_many_usuario" type="rel1n"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 col-indexes="5" constr-indexes="2"
+	 src-table="public.orgao"
+	 dst-table="public.usuario"
+	 src-required="false" dst-required="false"/>
+
+<constraint name="usuario_fk" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="public.usuario" table="public.usuario_sistema">
+	<columns names="cpf_usuario" ref-type="src-columns"/>
+	<columns names="cpf" ref-type="dst-columns"/>
+</constraint>
+<constraint name="sistema_fk" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="public.sistema" table="public.usuario_sistema">
+	<columns names="id_sistema" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+<relationship name="rel_usuario_sistema_usuario" type="relfk"
+	 src-table="public.usuario_sistema"
+	 dst-table="public.usuario"
+	 src-required="true" dst-required="true"/>
+
+<relationship name="rel_usuario_sistema_sistema" type="relfk"
+	 src-table="public.usuario_sistema"
+	 dst-table="public.sistema"
+	 src-required="true" dst-required="true"/>
+
+</dbmodel>
