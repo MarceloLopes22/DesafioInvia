@@ -11,28 +11,24 @@ CREATE TABLE public.usuario(
 	id_cargo bigint,
 	id_orgao bigint,
 	CONSTRAINT usuario_pk PRIMARY KEY (cpf)
-
 );
 
 CREATE TABLE public.cargo(
 	id bigint,
 	descricao varchar,
 	CONSTRAINT cargo_pk PRIMARY KEY (id)
-
 );
 
 CREATE TABLE public.orgao(
 	id bigint,
 	nome varchar,
 	CONSTRAINT orgao_pk PRIMARY KEY (id)
-
 );
 
 CREATE TABLE public.sistema(
 	id bigint,
 	nome varchar,
 	CONSTRAINT sistema_pk PRIMARY KEY (id)
-
 );
 
 CREATE TABLE public.telefone(
@@ -42,7 +38,6 @@ CREATE TABLE public.telefone(
 	tipo varchar,
 	cpf_usuario varchar,
 	CONSTRAINT telefone_pk PRIMARY KEY (id)
-
 );
 
 ALTER TABLE public.telefone ADD CONSTRAINT usuario_fk FOREIGN KEY (cpf_usuario)
