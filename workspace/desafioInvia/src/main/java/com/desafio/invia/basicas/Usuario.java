@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -32,12 +33,14 @@ public class Usuario extends Entidade {
 	private String senha;
 	
 	@ManyToOne
+	@JoinColumn(name = "id_cargo")
 	private Cargo cargo;
 	
 	@ManyToOne
+	@JoinColumn(name = "id_orgao")
 	private Orgao orgao;
 	
-	@ManyToMany
+	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(
 			  name = "usuario_sistema", 
 			  joinColumns = @JoinColumn(name = "cpf_usuario"), 

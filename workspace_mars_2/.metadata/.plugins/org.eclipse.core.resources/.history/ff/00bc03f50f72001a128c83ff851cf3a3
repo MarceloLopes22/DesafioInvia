@@ -1,0 +1,49 @@
+function login(){
+	//Creating a new XMLHttpRequest object
+    var xmlhttp;
+    if (window.XMLHttpRequest){
+        xmlhttp = new XMLHttpRequest(); //for IE7+, Firefox, Chrome, Opera, Safari
+    } else {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); //for IE6, IE5
+    }
+ // Envia a informação do cabeçalho junto com a requisição.
+    xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    //Create a asynchronous GET request
+    xmlhttp.open("POST", 'http://localhost:8080/desafioInvia/LoginViewServlet', false);
+    
+    var dados = "email=" + document.getElementById("email").value +
+    			"&senha="+ document.getElementById("senha").value;
+    
+    xmlhttp.send(dados);
+     
+    //Execution blocked till server send the response
+    if (xmlhttp.readyState == 4){ 
+        if (xmlhttp.status == 200){
+            document.getElementById("message").innerHTML = xmlhttp.responseText;
+        } else {
+           document.getElementById("erro").innerHTML = xmlhttp.responseText;
+           /*alert('Something is wrong !!');
+           $("#erro").val(xmlhttp.responseText);
+     	   alert(xmlhttp.responseText);*/
+        }
+    }
+}
+
+/*function login(){
+	$.ajax({
+		url : 'http://localhost:8080/desafioInvia/LoginViewServlet',
+		type : 'POST',
+		data : {
+			email : $("#email").val(),
+			senha : $("#senha").val()
+		}, success : function (response, text) {
+			alert(response);
+		},error : function (request, status, error) {
+			$("#erro").val(request.responseText);
+			alert(request.responseText);
+		}
+	}).fail(function() {
+	   $("#erro").val(request.responseText);
+	   alert(request.responseText);
+	});
+}*/

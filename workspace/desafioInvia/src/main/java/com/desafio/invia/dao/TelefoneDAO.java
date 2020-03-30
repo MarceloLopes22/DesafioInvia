@@ -21,6 +21,7 @@ public class TelefoneDAO extends DAO {
 		transaction.begin();
 
 		Telefone telefone = manager.find(Telefone.class, id);
+		manager.close();
 		return telefone;
 	}
 
@@ -31,6 +32,7 @@ public class TelefoneDAO extends DAO {
 		Query query = manager.createQuery("SELECT t FROM Telefone t");
 
 		List<Telefone> telefones = (List<Telefone>) query.getResultList();
+		manager.close();
 		return telefones;
 	}  
 }

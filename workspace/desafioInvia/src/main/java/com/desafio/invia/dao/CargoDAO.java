@@ -21,6 +21,8 @@ public class CargoDAO extends DAO {
 		transaction.begin();
 		
 		Cargo cargo = manager.find(Cargo.class, id);
+		manager.close();
+		
 		return cargo;
 	}
 	
@@ -31,6 +33,7 @@ public class CargoDAO extends DAO {
 		 Query query = manager.createQuery("SELECT c FROM Cargo c");
 		
 		List<Cargo> cargos = (List<Cargo>) query.getResultList();
+		manager.close();
 		return cargos;
 	} 
 }

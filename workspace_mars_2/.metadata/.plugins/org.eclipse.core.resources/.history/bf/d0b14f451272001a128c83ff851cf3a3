@@ -1,0 +1,68 @@
+function login(){
+	$.ajax({
+		url : 'http://localhost:8080/desafioInvia/LoginViewServlet',
+		type : 'POST',
+		data : {
+			email : $("#email").val(),
+			senha : $("#senha").val()
+		}, success : function (response, text) {
+			alert(response);
+		},error : function (request, status, error) {
+			$("#erro").val(request.responseText);
+			alert(request.responseText);
+		}
+	}).fail(function() {
+	   $("#erro").val(request.responseText);
+	   alert(request.responseText);
+	});
+}
+/*
+var request;
+ 
+$("#login").submit(function(event) {
+ 
+    // abort any pending request
+    if (request) {
+        request.abort();
+    }
+     
+  event.preventDefault();
+ 
+   $("#result").html('');
+ 
+   var values = $(this).serialize();
+ 
+  request =$.ajax({
+      url: "http://localhost:8080/desafioInvia/LoginViewServlet",
+      type: "post",
+      data: {
+			email : $("#email").val(),
+			senha : $("#senha").val()
+		},
+      success: function(){
+           $("#result").html('submitted successfully');
+      },
+      error:function(){
+          $("#result").html('there is error while submit');
+      }   
+  }); 
+});*/
+
+/*function login(){
+	$.ajax({
+		url : 'http://localhost:8080/desafioInvia/LoginViewServlet',
+		type : 'POST',
+		data : {
+			email : $("#email").val(),
+			senha : $("#senha").val()
+		}, success : function (response, text) {
+			alert(response);
+		},error : function (request, status, error) {
+			$("#erro").val(request.responseText);
+			alert(request.responseText);
+		}
+	}).fail(function() {
+	   $("#erro").val(request.responseText);
+	   alert(request.responseText);
+	});
+}*/

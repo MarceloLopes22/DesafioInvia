@@ -22,6 +22,7 @@ public class OrgaoDAO extends DAO {
 		transaction.begin();
 		
 		Orgao orgao = manager.find(Orgao.class, id);
+		manager.close();
 		return orgao;
 	}
 	
@@ -33,7 +34,7 @@ public class OrgaoDAO extends DAO {
 		 Query query = manager.createQuery("SELECT o FROM Orgao o");
 		
 		List<Orgao> orgaos = (List<Orgao>) query.getResultList();
-		 
+		manager.close();
 		return orgaos;
 	}
 }

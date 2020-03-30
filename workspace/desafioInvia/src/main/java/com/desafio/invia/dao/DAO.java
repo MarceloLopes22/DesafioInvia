@@ -16,9 +16,11 @@ public class DAO implements Serializable {
 	private static String PERSISTENCE_NAME_UNIT = "desafioInvia";
 
 	private EntityManager entityManager;
+	
+	private EntityManagerFactory emf;
 
 	public DAO() {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory(PERSISTENCE_NAME_UNIT);
+		emf = Persistence.createEntityManagerFactory(PERSISTENCE_NAME_UNIT);
 		entityManager = emf.createEntityManager();
 	}
 	
@@ -33,6 +35,9 @@ public class DAO implements Serializable {
 	}
 
 	public <T extends Entidade> T salvar(T entity) {
+		if (!getEntityManager().isOpen()) {
+			this.entityManager = getEntityManagerFactory().createEntityManager();
+		}
 		abrirTrasacao();
 		entityManager.persist(entity);
 		entityManager.flush();
@@ -41,6 +46,9 @@ public class DAO implements Serializable {
 	}
 
 	public <T extends Entidade> T atualizar(T entity) {
+		if (!getEntityManager().isOpen()) {
+			this.entityManager = getEntityManagerFactory().createEntityManager();
+		}
 		abrirTrasacao();
 		entityManager.merge(entity);
 		entityManager.flush();
@@ -49,6 +57,9 @@ public class DAO implements Serializable {
 	}
 
 	public <T extends Entidade> void remover(T entity) {
+		if (!getEntityManager().isOpen()) {
+			this.entityManager = getEntityManagerFactory().createEntityManager();
+		}
 		abrirTrasacao();
 		entityManager.remove(entity);
 		entityManager.flush();
@@ -57,5 +68,9 @@ public class DAO implements Serializable {
 
 	public EntityManager getEntityManager() {
 		return entityManager;
+	}
+	
+	public EntityManagerFactory getEntityManagerFactory() {
+		return Persistence.createEntityManagerFactory(PERSISTENCE_NAME_UNIT);
 	}
 }

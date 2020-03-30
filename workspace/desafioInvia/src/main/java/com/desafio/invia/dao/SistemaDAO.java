@@ -21,6 +21,7 @@ public class SistemaDAO extends DAO {
 		transaction.begin();
 
 		Sistema sistema = manager.find(Sistema.class, id);
+		manager.close();
 		return sistema;
 	}
 
@@ -31,6 +32,7 @@ public class SistemaDAO extends DAO {
 		Query query = manager.createQuery("SELECT s FROM Sistema s");
 
 		List<Sistema> orgaos = (List<Sistema>) query.getResultList();
+		manager.close();
 		return orgaos;
 	}  
 }

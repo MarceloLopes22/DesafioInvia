@@ -1,0 +1,71 @@
+function login(){
+	$.ajax({
+		url : 'http://localhost:8080/desafioInvia/LoginViewServlet',
+		type : 'POST',
+		data : {
+			email : $("#email").val(),
+			senha : $("#senha").val()
+		}, success : function (response, text) {
+			alert(response);
+		},error : function (request, status, error) {
+			$("#erro").val(request.responseText);
+			alert(request.responseText);
+		}
+	}).fail(function() {
+	   $("#erro").val(request.responseText);
+	   alert(request.responseText);
+	});
+}
+
+//Current request reference; can be used else where
+var request;
+ 
+/* attach a submit handler to the form */
+$("#login").submit(function(event) {
+ 
+    // abort any pending request
+    if (request) {
+        request.abort();
+    }
+     
+  /* stop form from submitting normally */
+  event.preventDefault();
+ 
+  /*clear result div*/
+   $("#result").html('');
+ 
+  /* get some values from elements on the page: */
+   var values = $(this).serialize();
+ 
+  /* Send the data using post and put the results in a div */
+  request =$.ajax({
+      url: "ajaxRequest",
+      type: "post",
+      data: values,
+      success: function(){
+           $("#result").html('submitted successfully');
+      },
+      error:function(){
+          $("#result").html('there is error while submit');
+      }   
+  }); 
+});
+
+/*function login(){
+	$.ajax({
+		url : 'http://localhost:8080/desafioInvia/LoginViewServlet',
+		type : 'POST',
+		data : {
+			email : $("#email").val(),
+			senha : $("#senha").val()
+		}, success : function (response, text) {
+			alert(response);
+		},error : function (request, status, error) {
+			$("#erro").val(request.responseText);
+			alert(request.responseText);
+		}
+	}).fail(function() {
+	   $("#erro").val(request.responseText);
+	   alert(request.responseText);
+	});
+}*/
