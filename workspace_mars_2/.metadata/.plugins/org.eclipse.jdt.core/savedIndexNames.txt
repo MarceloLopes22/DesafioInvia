@@ -1,2 +1,0 @@
-INDEX VERSION 1.127+D:\Configurações\repositorio git\DesafioInvia\workspace_mars_2\.metadata\.plugins\org.eclipse.jdt.core
-1628519478.index
