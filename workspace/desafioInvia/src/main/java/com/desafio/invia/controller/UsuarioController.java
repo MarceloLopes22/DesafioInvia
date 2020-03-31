@@ -34,12 +34,19 @@ public class UsuarioController {
 
 	public void remover(String cpf) throws Exception {
 		
-		if (cpf.isEmpty() || cpf == null) {
+		if (cpf == null || cpf.isEmpty()) {
 			throw new Exception("Por favor informe o CPF.");
 		}
 		
 		Usuario usuario = getUsuario(cpf);
-		this.usuarioDAO.remover(usuario);
+
+		if (usuario == null) {
+			throw new Exception("Usuario inexistente, favor informe um usuario valido.");
+		}
+		if (usuario != null) {
+			this.usuarioDAO.remover(usuario);
+		}
+		
 	}
 
 	public List<Usuario> getUsuarios() {
@@ -63,5 +70,9 @@ public class UsuarioController {
 		}
 		
 		return usuario;
+	}
+	
+	public void remover(Usuario usuario){
+		this.usuarioDAO.remover(usuario);
 	}
 }

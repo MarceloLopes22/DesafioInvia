@@ -24,7 +24,7 @@ public class SistemaController {
 
 	public void remover(Long id) {
 		Sistema sistema = getSistema(id);
-		this.sistemaDAO.remover(sistema);
+		this.sistemaDAO.remover(sistema, id);
 	}
 
 	public List<Sistema> getSistemas() {

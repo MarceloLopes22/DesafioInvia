@@ -33,12 +33,8 @@ $(window).on('load', function() {
 </head>
 <body>
 	<div align="center" id="formUsuario">
-		<c:if test="${usuario.cpf != null}">
-			<form action="atualizar" method="post">
-		</c:if>
-		<c:if test="${usuario.cpf == null}">
-			<form action="inserir" method="post">
-		</c:if>
+		
+		<form>
 		<div align="center">
 			<h1>Gerenciamento de usuarios</h1>
 			<h2>
@@ -49,21 +45,21 @@ $(window).on('load', function() {
 			<table border="1" cellpadding="5">
 				<caption>
 					<h2>
-						<c:if test="${usuario.cpf != null}">
+						<c:if test="${not empty usuario.cpf}">
 	                        Alterar Usuario
 	                    </c:if>
-						<c:if test="${usuario.cpf == null}">
+						<c:if test="${empty usuario.cpf}">
 	                        Inserir Usuario
 	                    </c:if>
 					</h2>
 				</caption>
-				<c:if test="${usuario.cpf != null}">
-					<input type="hidden" name="cpf" id="cpf" value="<c:out value='${usuario.cpf}' />" />
+				<c:if test="${not empty usuario.cpf}">
+					<input type="hidden" name="cpf" id="cpf" value="<c:out value="${usuario.cpf}" />" />
 				</c:if>
 				<tr>
 					<th>CPF:</th>
 					<td>
-						<input type="text" name="cpf" id="cpf" size="45" value="<c:out value='${usuario.cpf}' />" />
+						<input type="text" name="cpf" id="cpf" size="45" value="<c:out value="${usuario.cpf}" />" />
 						<c:if test="${not empty erro}">
 							<pre>${erro}</pre>
 						</c:if>
@@ -72,19 +68,19 @@ $(window).on('load', function() {
 				<tr>
 					<th>Nome:</th>
 					<td>
-						<input type="text" name="nome" id="nome" size="45" value="<c:out value='${usuario.nome}' />" />
+						<input type="text" name="nome" id="nome" size="45" value="<c:out value="${usuario.nome}" />" />
 					</td>
 				</tr>
 				<tr>
 					<th>Email:</th>
 					<td>
-						<input type="text" name="email" id="email" size="45" value="<c:out value='${usuario.email}' />" />
+						<input type="text" name="email" id="email" size="45" value="<c:out value="${usuario.email}" />" />
 					</td>
 				</tr>
 				<tr>
 					<th>Senha:</th>
 					<td>
-						<input type="text" name="senha" id="senha" size="45" value="<c:out value='${usuario.senha}' />" />
+						<input type="password" name="senha" id="senha" size="45" value="<c:out value="${usuario.senha}" />" />
 					</td>
 				</tr>
 				<tr>

@@ -8,6 +8,7 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 import com.desafio.invia.basicas.Entidade;
+import com.desafio.invia.util.Util;
 
 public class DAO implements Serializable {
 
@@ -56,12 +57,12 @@ public class DAO implements Serializable {
 		return entity;
 	}
 
-	public <T extends Entidade> void remover(T entity) {
+	public <T extends Entidade> void remover(T entity, Long id) {
 		if (!getEntityManager().isOpen()) {
 			this.entityManager = getEntityManagerFactory().createEntityManager();
 		}
 		abrirTrasacao();
-		entityManager.remove(entity);
+		entityManager.remove(entityManager.getReference(Util.entidade(entity).getClass(), id));
 		entityManager.flush();
 		commit();
 	}

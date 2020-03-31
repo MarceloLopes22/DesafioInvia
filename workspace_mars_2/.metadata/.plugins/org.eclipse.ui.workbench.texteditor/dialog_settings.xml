@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="c" key="selection"/>
+		<item value="acessarPagAlterar" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="acessarPagAlterar"/>
 			<item value="c"/>
 			<item value="&lt;td&gt;&lt;c:out value=&quot;${u.nome}&quot; /&gt;&lt;/td&gt;"/>
 			<item value="value=&quot;&quot; "/>

@@ -24,7 +24,7 @@ public class OrgaoController {
 
 	public void remover(Long id) {
 		Orgao orgao = getOrgao(id);
-		this.orgaoDAO.remover(orgao);
+		this.orgaoDAO.remover(orgao, id);
 	}
 
 	public List<Orgao> getOrgaos() {

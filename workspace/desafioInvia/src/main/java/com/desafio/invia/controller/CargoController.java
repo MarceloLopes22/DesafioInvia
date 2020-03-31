@@ -24,7 +24,7 @@ public class CargoController {
 
 	public void remover(Long id) {
 		Cargo cargo = getCargo(id);
-		this.cargoDAO.remover(cargo);
+		this.cargoDAO.remover(cargo, id);
 	}
 
 	public List<Cargo> getCargos() {

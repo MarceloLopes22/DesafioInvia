@@ -24,7 +24,7 @@ public class TelefoneController {
 
 	public void remover(Long id) {
 		Telefone telefone = getTelefone(id);
-		this.sistemaDAO.remover(telefone);
+		this.sistemaDAO.remover(telefone, id);
 	}
 
 	public List<Telefone> getTelefones() {

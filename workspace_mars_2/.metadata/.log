@@ -1,4 +1,4 @@
-!SESSION 2020-03-31 01:11:13.261 -----------------------------------------------
+!SESSION 2020-03-31 14:04:25.729 -----------------------------------------------
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_232
 java.vendor=AdoptOpenJDK
@@ -6,98 +6,10 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-This is a continuation of log file D:\Configurações\repositorio git\DesafioInvia\workspace_mars_2\.metadata\.bak_0.log
-Created Time: 2020-03-31 02:16:06.309
+This is a continuation of log file D:\Configurações\repositorio git\DesafioInvia\workspace_mars_2\.metadata\.bak_1.log
+Created Time: 2020-03-31 16:21:41.028
 
-!ENTRY tern.eclipse.ide.core 4 0 2020-03-31 02:16:06.309
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2020-03-31 02:16:06.358
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2020-03-31 02:16:10.804
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2020-03-31 02:16:10.845
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY org.eclipse.core.resources 4 2 2020-03-31 02:16:11.031
-!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
-!STACK 0
-java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
-	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
-	at org.jboss.jandex.Indexer.index(Indexer.java:699)
-	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
-	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
-	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
-	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
-	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
-	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
-	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
-	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
-	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.core.resources 4 2 2020-03-31 02:16:11.158
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:21:41.028
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -123,16 +35,14 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 02:16:11.166
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:21:41.364
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 02:16:11.168
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:21:41.366
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.core.resources 4 75 2020-03-31 02:16:11.171
-!MESSAGE Errors occurred during the build.
-!SUBENTRY 1 org.jboss.tools.jst.web.kb 4 75 2020-03-31 02:16:11.171
-!MESSAGE Errors running builder 'JBoss Knowledge Base Builder' on project 'desafioInvia'.
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:21:42.512
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
@@ -158,7 +68,36 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 02:16:11.171
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:21:42.701
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:21:42.704
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:21:42.704
 !MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -184,7 +123,7 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.core.resources 4 2 2020-03-31 02:16:52.268
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:21:46.664
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -212,7 +151,7 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.core.resources 4 2 2020-03-31 02:16:52.399
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:21:46.754
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -238,16 +177,14 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 02:16:52.402
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:21:46.911
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 02:16:52.403
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:21:46.912
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.core.resources 4 75 2020-03-31 02:16:52.404
-!MESSAGE Errors occurred during the build.
-!SUBENTRY 1 org.jboss.tools.jst.web.kb 4 75 2020-03-31 02:16:52.404
-!MESSAGE Errors running builder 'JBoss Knowledge Base Builder' on project 'desafioInvia'.
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:21:48.097
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
@@ -273,7 +210,36 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 02:16:52.404
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:21:48.330
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:21:48.334
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:21:48.334
 !MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -299,7 +265,7 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.core.resources 4 2 2020-03-31 02:22:55.564
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:25.667
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -327,7 +293,7 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.core.resources 4 2 2020-03-31 02:22:55.656
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:25.767
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -353,16 +319,14 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 02:22:55.661
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:22:25.997
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 02:22:55.662
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:22:25.999
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.core.resources 4 75 2020-03-31 02:22:55.663
-!MESSAGE Errors occurred during the build.
-!SUBENTRY 1 org.jboss.tools.jst.web.kb 4 75 2020-03-31 02:22:55.663
-!MESSAGE Errors running builder 'JBoss Knowledge Base Builder' on project 'desafioInvia'.
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:27.106
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
@@ -388,7 +352,36 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 02:22:55.663
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:27.300
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:22:27.303
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:22:27.303
 !MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -414,7 +407,7 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.core.resources 4 2 2020-03-31 02:23:15.442
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:50.996
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -442,7 +435,7 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.core.resources 4 2 2020-03-31 02:23:15.551
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:51.093
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -468,13 +461,13 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 02:23:15.743
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:22:51.540
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 02:23:15.746
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:22:51.542
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.core.resources 4 2 2020-03-31 02:23:16.915
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:52.692
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -502,7 +495,7 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.core.resources 4 2 2020-03-31 02:23:17.043
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:52.883
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -528,9 +521,668 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.core.resources 4 75 2020-03-31 02:23:17.047
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:22:52.886
 !MESSAGE Errors occurred during the build.
-!SUBENTRY 1 org.jboss.tools.jst.web.kb 4 75 2020-03-31 02:23:17.047
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:22:52.886
+!MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:54.023
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:54.564
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:22:54.727
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:22:54.732
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:55.872
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:56.145
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:22:56.148
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:22:56.148
+!MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:59.328
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:22:59.416
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:22:59.769
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:22:59.772
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:00.915
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:01.140
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:23:01.144
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:23:01.144
+!MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:13.816
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:13.918
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:23:14.286
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:23:14.291
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:15.412
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:15.660
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:23:15.663
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:23:15.663
+!MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:19.250
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:19.340
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:23:19.676
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:23:19.678
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:20.786
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:21.062
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:23:21.065
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:23:21.065
+!MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:32.189
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:32.275
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:23:32.281
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:23:32.284
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:23:32.290
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:23:32.303
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.jst.web.kb 4 75 2020-03-31 16:23:32.303
 !MESSAGE Errors running builder 'JBoss Knowledge Base Builder' on project 'desafioInvia'.
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
@@ -557,7 +1209,995 @@ java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 02:23:17.047
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:23:32.303
+!MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:32.556
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:32.808
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:23:32.811
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:23:32.811
+!MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:46.936
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:47.142
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:23:47.178
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:23:47.180
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:23:47.186
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.jst.web.kb 4 75 2020-03-31 16:23:47.186
+!MESSAGE Errors running builder 'JBoss Knowledge Base Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:23:47.187
+!MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:47.660
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:23:47.855
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:23:47.860
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.jst.web.kb 4 75 2020-03-31 16:23:47.860
+!MESSAGE Errors running builder 'JBoss Knowledge Base Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:23:47.860
+!MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:27.198
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:27.290
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:26:27.581
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:26:27.587
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:28.747
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:29.012
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:26:29.014
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:26:29.015
+!MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:30.516
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:30.631
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:26:30.773
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:26:30.780
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:31.927
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:32.119
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:26:32.122
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:26:32.122
+!MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:34.110
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:34.200
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:26:34.438
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:26:34.442
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:35.588
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:35.780
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:38.083
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:38.175
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:26:38.309
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:26:38.314
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:39.452
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:39.662
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:26:39.665
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:26:39.665
+!MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:41.637
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:41.727
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:26:41.848
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-31 16:26:41.850
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:43.002
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasSubtypes(JandexUtil.java:123)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.computeIsJarBatchArchive(BatchArchiveDetector.java:290)
+	at org.jboss.tools.batch.internal.core.scanner.BatchArchiveDetector.resolve(BatchArchiveDetector.java:196)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.detectBatchModule(ClassPathMonitor.java:164)
+	at org.jboss.tools.batch.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:69)
+	at org.jboss.tools.batch.internal.core.impl.BatchBuilder.build(BatchBuilder.java:126)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.buildExtensionModels(KbBuilder.java:212)
+	at org.jboss.tools.jst.web.kb.internal.KbBuilder.build(KbBuilder.java:133)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-03-31 16:26:43.201
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:665)
+	at org.jboss.jandex.Indexer.index(Indexer.java:699)
+	at org.jboss.tools.common.core.jandex.JandexUtil.createJarIndex(JandexUtil.java:56)
+	at org.jboss.tools.common.core.jandex.JandexUtil.hasAnnotation(JandexUtil.java:104)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.hasAnnotatedBeans(BeanArchiveDetector.java:276)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.resolve(BeanArchiveDetector.java:203)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:206)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-03-31 16:26:43.204
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.jboss.tools.cdi.core 4 75 2020-03-31 16:26:43.204
 !MESSAGE Errors running builder 'CDI (Contexts and Dependency Injection) Builder' on project 'desafioInvia'.
 !STACK 0
 java.lang.IllegalStateException: Unknown tag! pos=3 poolCount = 86

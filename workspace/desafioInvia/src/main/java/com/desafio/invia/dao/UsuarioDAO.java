@@ -8,6 +8,7 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Query;
 
 import com.desafio.invia.basicas.Usuario;
+import com.desafio.invia.util.Util;
 
 @SuppressWarnings("unchecked")
 @ApplicationScoped
@@ -25,6 +26,7 @@ public class UsuarioDAO extends DAO {
 
 		Usuario usuario = manager.find(Usuario.class, cpf);
 		
+		transaction.commit();;
 		manager.close();
 		
 		return usuario;
@@ -42,8 +44,8 @@ public class UsuarioDAO extends DAO {
 		Query query = manager.createQuery("SELECT u FROM Usuario u");
 
 		List<Usuario> usuarios = (List<Usuario>) query.getResultList();
-		transaction.commit();
-		manager.close();
+//		transaction.commit();
+//		manager.close();
 		return usuarios;
 	}
 
@@ -67,5 +69,19 @@ public class UsuarioDAO extends DAO {
 		transaction.commit();
 		manager.close();
 		return usuarioDoLogin;
+	}
+
+	public void remover(Usuario usuario) {
+		EntityManager manager = getEntityManager();
+		if (!manager.isOpen()) {
+			manager = getEntityManagerFactory().createEntityManager();
+		}
+		EntityTransaction transaction = manager.getTransaction();
+		transaction.begin();
+		
+		manager.remove(manager.getReference(Util.entidade(usuario).getClass(), usuario.getCpf()));
+		
+		transaction.commit();
+		manager.close();
 	}  
 }

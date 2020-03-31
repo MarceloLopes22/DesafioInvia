@@ -1,0 +1,16 @@
+package com.desafio.invia.util;
+
+public class Util {
+
+	public static Object entidade(Objeto entidade){
+		
+		Entidade tabela = null;
+		
+		if (entidade instanceof Cargo) {
+			re
+		}
+		
+		
+		return null;
+	}
+}
