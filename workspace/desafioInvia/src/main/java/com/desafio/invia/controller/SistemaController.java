@@ -34,4 +34,8 @@ public class SistemaController {
 	public Sistema getSistema(Long id) {
 		return this.sistemaDAO.getSistema(id);
 	}
+
+	public List<Sistema> getSistemas(String[] sistemaIds) {
+		return this.sistemaDAO.getSistemas(sistemaIds);
+	}
 }

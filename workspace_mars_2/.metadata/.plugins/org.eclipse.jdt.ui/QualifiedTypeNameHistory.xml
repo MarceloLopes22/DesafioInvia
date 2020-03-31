@@ -3,4 +3,7 @@
 <fullyQualifiedTypeName name="java.net.URLEncoder"/>
 <fullyQualifiedTypeName name="com.desafio.invia.basicas.Usuario"/>
 <fullyQualifiedTypeName name="com.desafio.invia.controller.UsuarioController"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="com.desafio.invia.basicas.Sistema"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

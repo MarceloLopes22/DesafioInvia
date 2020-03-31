@@ -50,6 +50,9 @@ public class UsuarioDAO extends DAO {
 	public Usuario login(String email, String senha) {
 		
 		EntityManager manager = getEntityManager();
+		if (!manager.isOpen()) {
+			manager = getEntityManagerFactory().createEntityManager();
+		}
 		
 		EntityTransaction transaction = manager.getTransaction();
 		transaction.begin();

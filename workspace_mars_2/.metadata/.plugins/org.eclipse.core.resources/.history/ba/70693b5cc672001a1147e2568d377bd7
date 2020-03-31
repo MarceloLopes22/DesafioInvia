@@ -1,0 +1,148 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+<head>
+<title>Criar/Alterar Usuario</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(window).on('load', function() {
+	$(document).ready(function() {
+		var cpf = ${usuario.cpf};
+		if(cpf != null){
+			var selecionados = ${selecionados};
+			var sistemas = ${allSistemas};//Deverá ser carregada do banco de dados
+			console.log(selecionados);
+			console.log(sistemas);
+
+			$.each(sistemas,function(i, value){
+				$.each(selecionados,function(j, value2){
+					if(value.idSistema == value2.idSistema) {
+						$('#sistemas option[value=' + value2.idSistema + ']').attr('selected', true);
+					}
+				});
+			});
+		}
+	});
+});
+</script>
+</head>
+<body>
+	<div align="center">
+		<c:if test="${usuario.cpf != null}">
+			<form action="atualizar" method="post">
+		</c:if>
+		<c:if test="${usuario.cpf == null}">
+			<form action="inserir" method="post">
+		</c:if>
+		<div align="center">
+			<h1>Gerenciamento de usuarios</h1>
+			<h2>
+				<input type="submit" formmethod="get" formaction="<%=request.getContextPath()%>/inserir" value="Novo Usuario"></input> &nbsp;&nbsp;&nbsp; 
+				<input type="submit" formmethod="get" formaction=" <%=request.getContextPath()%>/list" value="Lista de Usuarios"></input>
+			</h2>
+		</div>
+			<table border="1" cellpadding="5">
+				<caption>
+					<h2>
+						<c:if test="${usuario.cpf != null}">
+	                        Alterar Usuario
+	                    </c:if>
+						<c:if test="${usuario.cpf == null}">
+	                        Inserir Usuario
+	                    </c:if>
+					</h2>
+				</caption>
+				<c:if test="${usuario.cpf != null}">
+					<input type="hidden" name="cpf" value="<c:out value='${usuario.cpf}' />" />
+				</c:if>
+				<tr>
+					<th>CPF:</th>
+					<td>
+						<input type="text" name="cpf" size="45" value="<c:out value='${usuario.cpf}' />" />
+					</td>
+				</tr>
+				<tr>
+					<th>Nome:</th>
+					<td>
+						<input type="text" name="nome" size="45" value="<c:out value='${usuario.nome}' />" />
+					</td>
+				</tr>
+				<tr>
+					<th>Cargo:</th>
+					<c:choose>
+						<c:when test="${usuario.cpf == null}">
+							<td>
+								<select name="cargo">
+								    <c:forEach items="${cargos}" var="c">
+								       <option value="${c.idCargo}">${c.nome}</option>
+								    </c:forEach>
+								</select>
+							</td>
+						</c:when>
+						<c:when test="${usuario.cpf != null}">
+							<td>
+								<select name="cargo">
+								    <c:forEach items="${cargos}" var="c">
+								       <option value="${c.idCargo}" ${c.idCargo == usuario.cargo.idCargo ? 'selected' : ''}>${c.nome}</option>
+								    </c:forEach>
+								</select>
+							</td>
+						</c:when>
+					</c:choose>
+				</tr>
+				<tr>
+					<th>Orgão:</th>
+					<c:choose>
+						<c:when test="${usuario.cpf == null}">
+							<td>
+								<select name="orgao">
+								    <c:forEach items="${orgaos}" var="c">
+								       <option value="${c.idOrgao}">${c.nome}</option>
+								    </c:forEach>
+								</select>
+							</td>
+						</c:when>
+						<c:when test="${usuario.cpf != null}">
+							<td>
+								<select name="orgao">
+								    <c:forEach items="${orgaos}" var="c">
+								       <option value="${c.idOrgao}" ${c.idOrgao == usuario.orgao.idOrgao ? 'selected' : ''}>${c.nome}</option>
+								    </c:forEach>
+								</select>
+							</td>
+						</c:when>
+					</c:choose>
+				</tr>
+				<tr>
+					<th>Email:</th>
+					<td>
+						<input type="text" name="email" size="45" value="<c:out value='${usuario.email}' />" />
+					</td>
+				</tr>
+				<tr>
+					<th>Senha:</th>
+					<td>
+						<input type="text" name="senha" size="45" value="<c:out value='${usuario.senha}' />" />
+					</td>
+				</tr>
+				<tr>
+					<th>Sistema:</th>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<c:if test="${usuario.cpf == null}">
+							<input name="inserir" type="submit" value="inserir" formmethod="post" formaction="<%=request.getContextPath()%>/inserir" />
+						</c:if>
+						<c:if test="${usuario.cpf != null}">
+							<input name="atualizar" type="submit" value="atualizar" formmethod="post" formaction="<%=request.getContextPath()%>/atualizar" />
+						</c:if>
+						<input type="reset" value="Limpar campos" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</body>
+</html>
