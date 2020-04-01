@@ -139,10 +139,10 @@
 				<tr>
 					<td colspan="2" align="center">
 						<c:if test="${usuario.cpf == null}">
-							<button type="submit" onclick="incluir('incluir')">inserir</button>
+							<button type="submit" onclick="incluir('incluir', event)">inserir</button>
 						</c:if>
 						<c:if test="${usuario.cpf != null}">
-							<button type="submit" onclick="incluir('atualizar')">atualizar</button>
+							<button type="submit" onclick="incluir('atualizar', event)">atualizar</button>
 						</c:if>
 						<input type="reset" value="Limpar campos" />
 					</td>

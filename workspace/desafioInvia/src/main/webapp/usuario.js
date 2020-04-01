@@ -64,9 +64,6 @@ function alterar(cpf){
 		success: function (dados) { 
 			var formLista = document.getElementById("formLista");
 			formLista.innerHTML = dados;
-			$(document).ready(function() {
-			      alert("document ready occurred!");
-			});
 		},
 		error: function (err){ 
 			alert(err.responseText);
@@ -74,8 +71,8 @@ function alterar(cpf){
 	});
 }
 
-function incluir(acao){
-	
+function incluir(acao, event){
+	event.preventDefault();
 	var selecionados = document.getElementById("sistemas").selectedOptions
 	var valores = [];
 	for(i = 0; i < selecionados.length; i++){

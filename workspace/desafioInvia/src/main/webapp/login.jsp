@@ -32,23 +32,5 @@
 				</c:if>
 			</div>
 		</div>
-		
-		<!-- <div align="center" id="formLogin">
-			<h1>Sefaz - Login</h1>
-			<form>
-				<table style="with: 100%">
-					<tr>
-						<td>Usuario</td>
-						<td><input type="text" id="email" name="email" /></td>
-					</tr>
-					<tr>
-						<td>Senha</td>
-						<td><input type="password" id="senha" name="senha" /></td>
-					</tr>
-				</table>
-				<button onclick="login()">Logar</button>
-				<input type="reset" value="Reset" />
-			</form>
-		</div> -->
 	</body>
 </html>
