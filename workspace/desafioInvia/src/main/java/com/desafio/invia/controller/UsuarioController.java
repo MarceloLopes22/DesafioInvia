@@ -7,6 +7,7 @@ import javax.inject.Inject;
 
 import com.desafio.invia.basicas.Usuario;
 import com.desafio.invia.dao.UsuarioDAO;
+import com.desafio.invia.util.Util;
 
 @Stateless
 public class UsuarioController {
@@ -14,20 +15,33 @@ public class UsuarioController {
 	@Inject
 	private UsuarioDAO usuarioDAO;
 	
-	public Usuario salvar(Usuario usuario) throws Exception {
+	public Usuario salvar(Usuario usuario, String acao) throws Exception {
 		
-		if (usuario != null && usuario.getCpf().isEmpty() || usuario.getCpf() == null) {
-			throw new Exception("Por favor preencha o CPF.");
-		}
+		validarDados(usuario, acao);
 		
 		return this.usuarioDAO.salvar(usuario);
 	}
 
-	public Usuario atualizar(Usuario usuario) throws Exception {
-		
-		if (usuario != null && usuario.getCpf().isEmpty() || usuario.getCpf() == null) {
+	private void validarDados(Usuario usuario, String acao) throws Exception {
+		if (usuario != null && usuario.getCpf() == null || usuario.getCpf().isEmpty()) {
 			throw new Exception("Por favor preencha o CPF.");
 		}
+		
+		if (usuario != null && !Util.isCPF(usuario.getCpf())) {
+			throw new Exception("Por favor informe um CPF valido.");
+		}
+		
+		if (acao != null && acao.equalsIgnoreCase("incluir")) {
+			Usuario usuarioConsultado = getUsuario(usuario.getCpf());
+			if (usuarioConsultado != null &&  usuarioConsultado.getCpf().equalsIgnoreCase(usuario.getCpf())) {
+				throw new Exception("Nao e permitido cadastrar mais de um usuario com o mesmo CPF.");
+			}
+		}
+	}
+
+	public Usuario atualizar(Usuario usuario) throws Exception {
+		
+		validarDados(usuario, null);
 		
 		return this.usuarioDAO.atualizar(usuario);
 	}

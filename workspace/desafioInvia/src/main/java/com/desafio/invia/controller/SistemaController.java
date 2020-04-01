@@ -1,5 +1,7 @@
 package com.desafio.invia.controller;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.Stateless;
@@ -35,7 +37,7 @@ public class SistemaController {
 		return this.sistemaDAO.getSistema(id);
 	}
 
-	public List<Sistema> getSistemas(String[] sistemaIds) {
-		return this.sistemaDAO.getSistemas(sistemaIds);
+	public List<Sistema> getSistemas(ArrayList<BigDecimal> idsSistemas) {
+		return this.sistemaDAO.getSistemas(idsSistemas);
 	}
 }

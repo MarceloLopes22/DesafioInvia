@@ -18,16 +18,16 @@ public class Sistema extends Entidade {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sistema_seq")
 	@Column(name = "id")
-	private Long id;
+	private long id;
 	
 	@Column(name = "nome")
 	private String nome;
 
-	public Long getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

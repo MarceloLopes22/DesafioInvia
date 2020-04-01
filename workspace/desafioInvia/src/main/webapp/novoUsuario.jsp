@@ -5,31 +5,10 @@
 <head>
 <title>Criar/Alterar Usuario</title>
 <script	src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<meta charset="utf-8"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<meta charset="utf-8">
 <script type="text/javascript" src="usuario.js"></script>
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
 
-$(window).on('load', function() {
-	$(document).ready(function() {
-		var cpf = ${usuario.cpf};
-		if(cpf != null){
-			var selecionados = ${selecionados};
-			var sistemas = ${allSistemas};//Deverá ser carregada do banco de dados
-			console.log(selecionados);
-			console.log(sistemas);
-
-			$.each(sistemas,function(i, value){
-				$.each(selecionados,function(j, value2){
-					if(value.idSistema == value2.idSistema) {
-						$('#sistemas option[value=' + value2.idSistema + ']').attr('selected', true);
-					}
-				});
-			});
-		}
-	});
-});
-</script> -->
 </head>
 <body>
 	<div align="center" id="formUsuario">
@@ -53,13 +32,10 @@ $(window).on('load', function() {
 	                    </c:if>
 					</h2>
 				</caption>
-				<c:if test="${not empty usuario.cpf}">
-					<input type="hidden" name="cpf" id="cpf" value="<c:out value="${usuario.cpf}" />" />
-				</c:if>
 				<tr>
 					<th>CPF:</th>
 					<td>
-						<input type="text" name="cpf" id="cpf" size="45" value="<c:out value="${usuario.cpf}" />" />
+						<input type="text" name="cpf" id="cpf" maxlength="11" size="45"  onfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" value="<c:out value="${usuario.cpf}" />" />
 						<c:if test="${not empty erro}">
 							<pre>${erro}</pre>
 						</c:if>
@@ -101,7 +77,7 @@ $(window).on('load', function() {
 								<select name="cargo" id="cargo">
 									<option value="0">Selecione</option>
 								    <c:forEach items="${cargos}" var="c">
-								       <option value="${c.id}" ${c.id == usuario.cargo.idCargo ? 'selected' : ''}>${c.descricao}</option>
+								       <option value="${c.id}" ${c.id == usuario.cargo.id ? 'selected' : ''}>${c.descricao}</option>
 								    </c:forEach>
 								</select>
 							</td>
@@ -126,7 +102,7 @@ $(window).on('load', function() {
 								<select name="orgao" id="orgao">
 									<option value="0">Selecione</option>
 								    <c:forEach items="${orgaos}" var="c">
-								       <option value="${c.id}" ${c.id == usuario.orgao.idOrgao ? 'selected' : ''}>${c.nome}</option>
+								       <option value="${c.id}" ${c.id == usuario.orgao.id ? 'selected' : ''}>${c.nome}</option>
 								    </c:forEach>
 								</select>
 							</td>
@@ -151,7 +127,9 @@ $(window).on('load', function() {
 								<select id="sistemas" name="sistemas" multiple="multiple" style="width: 200px;">
 									<option value="0">Selecione</option>
 								    <c:forEach items="${sistemas}" var="c">
-								       <option value="${c.id}" ${c.id == usuario.orgao.idOrgao ? 'selected' : ''}>${c.nome}</option>
+								    	<c:forEach items="${usuario.sistemas}" var="s">
+									       <option value="${c.id}" ${c.id == s.id ? 'selected' : ''}>${c.nome}</option>
+								    	</c:forEach>
 								    </c:forEach>
 								</select>
 							</td>
@@ -161,10 +139,10 @@ $(window).on('load', function() {
 				<tr>
 					<td colspan="2" align="center">
 						<c:if test="${usuario.cpf == null}">
-							<button name="inserir" type="submit" onclick="incluir()">inserir</button>
+							<button type="submit" onclick="incluir('incluir')">inserir</button>
 						</c:if>
 						<c:if test="${usuario.cpf != null}">
-							<button name="atualizar" type="submit" onclick="alterar(${usuario.cpf})">atualizar</button>
+							<button type="submit" onclick="incluir('atualizar')">atualizar</button>
 						</c:if>
 						<input type="reset" value="Limpar campos" />
 					</td>

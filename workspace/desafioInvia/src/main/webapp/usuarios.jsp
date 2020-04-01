@@ -3,8 +3,8 @@
 <html>
 <head>
 <script	src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<meta charset="utf-8"> 
 <script type="text/javascript" src="usuario.js"></script>
+<meta charset="utf-8"> 
 <title>Lista de Usuarios</title>
 </head>
 <body>

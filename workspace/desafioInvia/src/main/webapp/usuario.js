@@ -3,6 +3,18 @@ const URL_USUARIO = 'http://localhost:8080/desafioInvia/UsuarioViewServelet';
 const URL_LOGGOF= 'http://localhost:8080/desafioInvia/LoggofViewServlet';
 const URL_REMOVER_USUARIO= 'http://localhost:8080/desafioInvia/RemoverUsuarioViewServelet';
 
+function formatarCampo(campoTexto) {
+   campoTexto.value = mascaraCpf(campoTexto.value);
+}
+
+function mascaraCpf(valor) {
+    return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g,"\$1.\$2.\$3\-\$4");
+}
+
+function retirarFormatacao(campoTexto) {
+    campoTexto.value = campoTexto.value.replace(/(\.|\/|\-)/g,"");
+}
+
 function login(){
 	jQuery.ajax({
 		type: "POST",
@@ -52,6 +64,9 @@ function alterar(cpf){
 		success: function (dados) { 
 			var formLista = document.getElementById("formLista");
 			formLista.innerHTML = dados;
+			$(document).ready(function() {
+			      alert("document ready occurred!");
+			});
 		},
 		error: function (err){ 
 			alert(err.responseText);
@@ -59,26 +74,26 @@ function alterar(cpf){
 	});
 }
 
-function incluir(){
+function incluir(acao){
 	
 	var selecionados = document.getElementById("sistemas").selectedOptions
 	var valores = [];
 	for(i = 0; i < selecionados.length; i++){
-		valores.push(selecionados[i].value);
+		valores.push(parseInt(selecionados[i].value));
 	}
 	jQuery.ajax({
 		type: "POST",
 		async: false,
 		url: URL_USUARIO,
 		data:  {
-			"acao" : "incluir",
+			"acao": acao,
 			"cpf" : document.getElementById("cpf").value,
 			"nome" : document.getElementById("nome").value,
 			"email" : document.getElementById("email").value,
 			"senha" : document.getElementById("senha").value,
 			"cargo" : document.getElementById("cargo").value,
 			"orgao" : document.getElementById("orgao").value,
-			valores : valores
+			"sistemas" : valores
 		},
 		success: function (dados) { 
 			var formLista = document.getElementById("formLista");
@@ -89,6 +104,7 @@ function incluir(){
 		}
 	});
 }
+
 
 function loggof(){
 	jQuery.ajax({

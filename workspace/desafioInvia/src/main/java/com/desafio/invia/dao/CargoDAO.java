@@ -37,9 +37,8 @@ public class CargoDAO extends DAO {
 		}
 		EntityTransaction transaction = manager.getTransaction();
 		transaction.begin();
-		 Query query = manager.createQuery("SELECT c FROM Cargo c");
-		
-		List<Cargo> cargos = (List<Cargo>) query.getResultList();
+		Query createNamedQuery = manager.createNativeQuery("select * from cargo", Cargo.class);
+		List<Cargo> cargos = (List<Cargo>) createNamedQuery.getResultList();
 		transaction.commit();
 		manager.close();
 		return cargos;

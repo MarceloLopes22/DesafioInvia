@@ -1,7 +1,11 @@
 package com.desafio.invia.view;
 
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
@@ -81,26 +85,17 @@ public class UsuarioViewServelet extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String cpf = String.class.cast(request.getParameter("cpf"));
-		String nome = String.class.cast(request.getParameter("nome"));
-		Long cargoId = Long.valueOf(request.getParameter("cargo"));
-		Long orgaoId = Long.valueOf(request.getParameter("orgao"));
-		String email = String.class.cast(request.getParameter("email"));
-		String senha = String.class.cast(request.getParameter("senha"));
-		String[] sistemaIds = request.getParameterValues("valores");// Os ids não chegam aqui, porem estão sendo passados corretamente no ajax.
-		//long[] longArray = Arrays.stream(sistemaIds).mapToLong(i -> i).toArray();
-		
-		Usuario usuario = new Usuario();
-		usuario.setCpf(cpf);
-		usuario.setCargo(cargoController.getCargo(cargoId));
-		usuario.setEmail(email);
-		usuario.setNome(nome);
-		usuario.setSenha(senha);
-		usuario.setOrgao(orgaoController.getOrgao(orgaoId));
-		usuario.setSistemas(sistemaController.getSistemas(sistemaIds));
+		String acao = request.getParameter("acao");
+		Usuario usuario = preencherDadosUsuario(request);
 		
 		try {
-			usuarioController.salvar(usuario);
+			
+			if (acao != null && !acao.equals("") && acao.equals("incluir")) {
+				usuarioController.salvar(usuario, acao);
+			} else if (acao != null && !acao.equals("") && acao.equals("atualizar")){
+				usuarioController.atualizar(usuario);
+			}
+			
 			List<Usuario> usuarios = usuarioController.getUsuarios();
 			request.setAttribute("usuarios", usuarios);
 			response.setStatus(HttpServletResponse.SC_OK);
@@ -112,41 +107,46 @@ public class UsuarioViewServelet extends HttpServlet {
 		}
 	}
 
-	@Override
-	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String cpf = request.getParameter("cpf");
-		try {
-			usuarioController.remover(cpf);
-			List<Usuario> usuarios = usuarioController.getUsuarios();
-			request.setAttribute("usuarios", usuarios);
-			response.setStatus(HttpServletResponse.SC_OK);
-			request.getRequestDispatcher("/usuarios.jsp").forward(request, response);
-		} catch (Exception e) {
-			//response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-			//response.getWriter().print(e.getMessage());
-			request.setAttribute("erro", e.getMessage());
-			request.getRequestDispatcher("/novoUsuario.jsp").forward(request, response);
+	private Usuario preencherDadosUsuario(HttpServletRequest request) {
+		
+		String cpf = String.class.cast(request.getParameter("cpf"));
+		String nome = String.class.cast(request.getParameter("nome"));
+		String cargoId = String.valueOf(request.getParameter("cargo"));
+		String orgaoId = String.valueOf(request.getParameter("orgao"));
+		String email = String.class.cast(request.getParameter("email"));
+		String senha = String.class.cast(request.getParameter("senha"));
+		String[] sistemaIds = request.getParameterValues("sistemas[]");
+		ArrayList<BigDecimal> idsSistemas = new ArrayList<BigDecimal>();
+
+		if (sistemaIds != null && sistemaIds.length > 0) {
+			for (String id : sistemaIds) {
+				idsSistemas.add(new BigDecimal(id));
+			}
 		}
+		
+		Usuario usuario = new Usuario();
+		if (cpf != null && !cpf.isEmpty()) {
+			usuario.setCpf(cpf.replaceAll("[.-]", ""));
+		}
+		if (cargoId != null && Long.valueOf(cargoId) > 0) {
+			usuario.setCargo(cargoController.getCargo(Long.valueOf(cargoId)));
+		}
+		usuario.setEmail(email);
+		usuario.setNome(nome);
+		usuario.setSenha(senha);
+		if (orgaoId != null && Long.valueOf(orgaoId) > 0) {
+			usuario.setOrgao(orgaoController.getOrgao(Long.valueOf(orgaoId)));
+		}
+		if (idsSistemas != null && idsSistemas.size() > 0) {
+			usuario.setSistemas(sistemaController.getSistemas(idsSistemas));
+		}
+		return usuario;
 	}
 	
 	@Override
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String cpf = String.class.cast(request.getAttribute("cpf"));
-		String nome = String.class.cast(request.getAttribute("nome"));
-		String cargo = String.class.cast(request.getAttribute("cargo"));
-		String orgao = String.class.cast(request.getAttribute("orgao"));
-		String email = String.class.cast(request.getAttribute("email"));
-		String senha = String.class.cast(request.getAttribute("senha"));
-		String[] sistemaIds = request.getParameterValues("valores");
-		
-		Usuario usuario = new Usuario();
-		usuario.setCpf(cpf);
-		usuario.setCargo(cargoController.getCargo(Long.valueOf(cargo)));
-		usuario.setEmail(email);
-		usuario.setNome(nome);
-		usuario.setSenha(senha);
-		usuario.setOrgao(orgaoController.getOrgao(Long.valueOf(orgao)));
-		usuario.setSistemas(sistemaController.getSistemas(sistemaIds));
+
+		Usuario usuario = preencherDadosUsuario(request);
 		
 		try {
 			usuarioController.atualizar(usuario);

@@ -2,7 +2,7 @@ package com.desafio.invia.dao;
 
 import java.util.List;
 
-import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Query;
@@ -11,7 +11,7 @@ import com.desafio.invia.basicas.Usuario;
 import com.desafio.invia.util.Util;
 
 @SuppressWarnings("unchecked")
-@ApplicationScoped
+@RequestScoped
 public class UsuarioDAO extends DAO {
 
 	private static final long serialVersionUID = 1L;
